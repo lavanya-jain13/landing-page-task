@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .clip-shape {
+    clip-path: ellipse(65% 85% at 60% 50%);
+  }
+
+  @media (max-width: 1024px) {
+    .clip-shape {
+      clip-path: none;
+    }
+  }
+</style>
+
+  </head>
+  <body class="bg-gradient-to-r from-blue-900 to-black min-h-screen text-white flex flex-col">
+
+    <header class="flex justify-between items-center px-6 lg:px-16 py-5 bg-black bg-opacity-30">
+      <div class="text-2xl font-bold tracking-wide text-white">MailNest</div>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+        <a href="#" class="hover:text-blue-400">Home</a>
+        <a href="#" class="hover:text-blue-400">Services</a>
+        <a href="#" class="hover:text-blue-400">About</a>
+        <a href="#" class="hover:text-blue-400">Contact</a>
+        <a href="#" class="hover:text-blue-400">FAQ</a>
+      </nav>
+      <div class="md:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </header>
+
+    <main class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-16 py-12 flex-grow">
+      <div class="w-full lg:w-1/2 space-y-6 max-w-xl">
+        <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight">
+          Subscribe Now <br />
+          <span class="text-blue-400">to Our Newsletter</span>
+        </h1>
+        <p class="text-gray-300">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <form class="space-y-4">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full px-4 py-3 rounded-full text-black focus:outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full px-4 py-3 rounded-full text-black focus:outline-none"
+          />
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition"
+          >
+            Send →
+          </button>
+        </form>
+        <p class="text-sm mt-4 text-gray-400">www.graphicsfamily.com</p>
+      </div>
+
+      <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mb-10 lg:mb-0">
+  <img
+    src="./images/hero.jpg"
+    alt="Newsletter"
+    class="w-[600px] h-[400px] object-cover rounded-[80px] shadow-2xl clip-shape"/>
+</div>
+
+    </main>
+
+    <footer class="bg-black bg-opacity-40 text-center py-4 text-sm text-gray-400">
+      &copy; 2025 MailNest. All rights reserved.
+    </footer>
+  </body>
+</html>
