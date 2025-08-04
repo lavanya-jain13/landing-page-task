@@ -46,7 +46,7 @@ landing-page-task/
 
 > Here's a preview of the final page layout:
 
-![Landing Page](./images/screenshot.png)
+![Landing Page](./images/screenshot-v2.png)
 
 ---
 
